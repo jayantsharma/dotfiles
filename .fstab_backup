@@ -1,0 +1,6 @@
+# /dev/mmcblk0p4 LABEL=XK2SMTP12
+UUID=34F4CB0EF4CAD172	/         	ext4      	rw,relatime,data=ordered	0 1
+
+# /dev/mmcblk0p1 LABEL=SYSTEM
+UUID=364C-3730      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro	0 2
+
