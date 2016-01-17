@@ -242,7 +242,6 @@ irb
 irb
 irb
 exit
-exit
 git clonehttps://github.com/jayantsharma/dotfiles.git
 git clone https://github.com/jayantsharma/dotfiles.git
 ls
