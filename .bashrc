@@ -35,11 +35,7 @@ alias startAashima='sudo netctl start aashima'
 alias stopAashima='sudo netctl stop aashima'
 
 alias restart='sudo reboot'
-<<<<<<< HEAD
 alias shutdown='sudo shutdown now'
-=======
-alias shutdown='sudo shutdown'
->>>>>>> origin/master
 
 alias sshBharat='ssh rishu07@www.himalpinist.com'
 

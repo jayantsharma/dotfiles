@@ -1,41 +1,3 @@
-firefox
-packageInstall quark
-pacman -Q glibc
-pacman -Q libgtk
-pacman -Q gtk
-pacman -Q gtk3
-pacman -Q glib2
-less /var/log/pacman.log 
-man pacman 
-sudo pacman -S gtk3
-pacman -Q gtk3
-pacman -Ss gtk3
-pacman -Ss gtk3 | grep gtk3
-pacman -Ss gtk3 | grep gtk3
-ping www.google.com -c 3
-clear
-firefox
-restart 
-cd /var/cache/pacman/pkg/
-ls
-clear
-ls gtk3*
-pacman -Q gtk3
-restart 
-ls -a | grep gtk3
-restart 
-sudo pacman -R gtk3
-man pacman
-lsblk
-sudo mount /dev/mmcblk0p3 /mnt
-ls /mnt
-sudo -i
-ls
-sudo chmod 755 packages-ca083a159bc2cce2cbfb0b85a20c6b9d4873a52f.tar.gz 
-mkdir .packages
-0iecho 'mv packages-ca083a159bc2cce2cbfb0b85a20c6b9d4873a52f.tar.gz .p
-ls
-ls .p
 vim .p
 cd .packages/
 ls
@@ -414,3 +376,125 @@ timedatectl
 man hwclock
 clear
 shutdown 
+git status
+git init
+man ls
+ls -a
+ls -A
+clear
+ls -A
+git add .bash* .c* .fstab_backup .irbrc
+ls .cache/
+git help rm
+git-rm --cached .cache
+git rm --cached .cache
+git rm -r --cached .cache
+clear
+ls
+ls -A
+git status
+git status
+git help ls
+git help git-ls
+man git-ls
+git help commit
+ls .local/
+ls .mozilla/
+git add .pacman_database.tar.bz2 .pkglist .vim .viminfo .vimperator
+git status
+git add .vimperatorrc 
+git add .vimrc .Xresources .xinitrc 
+git commit -m 'minor changes to vimrc and Xresources'
+ls .git/
+ls .git/refs/heads/master 
+ls .git/HEAD 
+cat .git/HEAD 
+ls .git/refs/heads/master 
+cat .git/refs/heads/master 
+git help fsck
+git fsck 
+ls -l .git
+chmod 755 .git/*
+ls -l .git
+git commit -m 'minor changes to vimrc and Xresources'
+git remote
+git branch
+clear
+git branch
+git status
+git reflog -c 5
+git help log
+git reflog -n 5
+git fsck --full
+git log
+ls -A
+rm -r .git
+rm -rfI .git/
+sudo rm -rfI .git/
+clear
+ls -A
+git init
+git add .bashrc .bash_history .bash_profile .config/ 
+git add .fstab_backup .irbrc .pacman_database.tar.bz2 .pkglist 
+git add .vim .vimperatorrc .vimrc 
+git add .xinitrc .Xresources 
+git status
+clear
+man pacman
+pacman -Qqen > .pkglist 
+vim .pkglist 
+git add .pkglist 
+git commit -m 'couple small changes'
+git config --global user.email "jayantsharma1990@gmail.com"
+git config --global user.name "Jayant Sharma
+"
+git commit -m 'couple small changes'
+git remote add origin https://github.com/jayantsharma/dotfiles.git
+clear
+git push -u origin master
+git ls
+git-ls
+git log --.pacman*
+git status 
+clear
+git fetch origin
+git merge origin/master
+git status
+vim .Xresources 
+git add .Xresources 
+vim .bash_history 
+git add .bash_history 
+vim .bashrc 
+git add .bashrc 
+vim .pkglist 
+git add .pkglist 
+clear
+git status
+git commit
+git push origin
+git push -u origin master
+clear
+git log -n 4
+clear
+ping www.onlinesbi.com
+ping https://retail.onlinesbi.com/retail/login.htm -c 3
+irb
+man ri
+ri Object
+gem install rdoc-data
+rdoc-data --help
+ruby -v
+rdoc-data --dry-run
+rdoc-data --dry-run --install
+rdoc-data --install
+sudo rdoc-data --install
+rdoc-data --install
+clear
+rdoc-data --install
+pacman -Ss rdoc
+sudo rdoc-data --install
+sudo gem install rdoc-data
+sudo rdoc-data --install
+ri Object
+ri puts
+exit
