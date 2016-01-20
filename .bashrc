@@ -48,3 +48,5 @@ alias checkLogs='journalctl -p 0..3 -xn'
 
 # vi as default editor
 set -o vi
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

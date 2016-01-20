@@ -9,3 +9,10 @@ syntax on             " Enable syntax highlighting
 filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
+
+" size of a hard tabstop
+set tabstop=4
+" size of an indent
+set shiftwidth=4
+" others
+set softtabstop=4
