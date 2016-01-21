@@ -1,170 +1,3 @@
-rm foo.html 
-irb
-cp oddOccurrencesInArray.rb permMissingElem.rb
-vim permMissingElem.rb 
-irb
-ls
-vim permMissingElem.rb 
-ls
-mv permMissingElem.rb tapeEquilibrium.rb
-cat tapeEquilibrium.rb 
-restart 
-cd work/rubyScripts/
-irb
-vim tapeEquilibrium.rb 
-vim test
-ruby tapeEquilibrium.rb < test
-vim tapeEquilibrium.rb 
-ruby tapeEquilibrium.rb < test
-cp tapeEquilibrium.rb tapeEquilibrium.html
-firefox tapeEquilibrium.html 
-vim tapeEquilibrium.
-vim tapeEquilibrium.rb 
-ruby tapeEquilibrium.rb < test 
-vim test
-ruby tapeEquilibrium.rb < test 
-vim tapeEquilibrium.rb 
-ruby tapeEquilibrium.rb < test 
-vim tapeEquilibrium.rb 
-ruby tapeEquilibrium.rb < test 
-vim tapeEquilibrium.rb 
-vim test
-ruby tapeEquilibrium.rb < test 
-vim tapeEquilibrium.rb
-ruby tapeEquilibrium.rb < test 
-rm -I tapeEquilibrium.html 
-cp tapeEquilibrium.rb maxCount.rb
-vim maxCount.rb 
-vim test
-ruby maxCount.rb < test
-vim maxCount.rb 
-ruby maxCount.rb < test
-vim maxCount.rb 
-ruby maxCount.rb < test
-vim maxCount.rb 
-ruby maxCount.rb < test
-vim test
-ruby maxCount.rb < test
-cp maxCount.rb maxCount.html
-firefox maxCount.html 
-vim maxCount.rb 
-exit
-cd work/rubyScripts/
-ri inject
-ri reduce
-ri reduce
-ri reduce
-ri sym
-irb
-ri Array
-irb
-ri collect
-ri Array
-ri map
-ri collect
-ri Array
-irb
-cat test
-rm -I maxCount.html 
-ls
-git init
-git add *.rb
-git status
-git commit -m 'some codility solutions'
-git remote add origin https://github.com/jayantsharma/rubScripts.git
-git fetch origin
-git help remote
-git remote set-url origin https://github.com/jayantsharma/rubyScripts.git
-git fetch origin
-git merge origin/master
-git push -u origin master
-ls
-clear
-shutdown
-ri reduce
-ri inject
-ri Array.bsearch
-ri Array.index
-ri Array.bsearch
-clear
-cd work/rubyScripts/
-ls
-vim binaryGap.rb 
-vim tapeEquilibrium.rb 
-vim maxCount.rb 
-cp maxCount.rb minAvgTwoSlice.rb
-vim minAvgTwoSlice.rb 
-vim test
-vim test
-cp minAvgTwoSlice.rb minAvgTwoSlice.html
-firefox minAvgTwoSlice.
-firefox minAvgTwoSlice.html 
-vim minAvgTwoSlice.
-vim minAvgTwoSlice.rb 
-vim test
-vim fibo.rb
-clear
-irb
-clear
-ls
-rm minAvgTwoSlice.html 
-exit
-pacman -Ss latex
-packageInstall texlive-most
-packageInstall texlive-core
-packageInstall texlive-core
-tex '\empty Hello world!\bye'
-xpdf texput.dvi 
-packageInstall xpdf
-pacman -Ss xpdf
-man popd
-popd texput.dvi 
-pacman -Ss xpdf
-packageInstall evince
-packageInstall evince
-evince texput.dvi 
-pdftex '\empty Hello world!\bye'
-evince texput.pdf 
-ls texput.*
-rm -I texput.*
-ri map
-irb
-ri Hash
-irb
-ri Array
-ri Hash
-ri for
-cd work/rubyScripts/
-clear
-vim test
-ruby minAvgTwoSlice.rb < test
-irb
-ruby minAvgTwoSlice.rb < test
-clear
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-vim test
-ruby minAvgTwoSlice.rb < test
-vim test
-clear
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-ruby minAvgTwoSlice.rb < test
-clear
-reboot 
-mkdir resume
-cd resume/
-pacman -Ss libre
-pacman -Ss libre | less
 clear
 pacman -Ss europecv
 pacman -Ss curve
@@ -498,3 +331,170 @@ gem search redcarpet
 rake doc:rails
 firefox doc/api/index.html 
 exit
+cd work/blog/
+bin/rails server
+cd ../crispy-parakeet/
+bin/rails server
+cd ../blog/
+clear
+vim app/controllers/welcome_controller.rb 
+vim app/controllers/articles_controller.rb 
+ls bin/
+bin/rails server
+vim Gemfile
+vim Gemfile.lock 
+vim app/views/articles/new.html.erb
+cd ../crispy-parakeet/
+ls
+clear
+ls
+cd app/
+ls
+ls controllers/
+vim controllers/application_controller.rb 
+vim controllers/loanapps_controller.rb 
+pwd
+ls views/
+ls views/loanapps/
+vim views/loanapps/new.html.erb 
+vim ../../blog/Gemfile
+vim ../../blog/Gemfile.lock 
+cd ../../blog/
+ls
+pwd
+bin/rails server
+gem list | grep activesupport
+gem list > foo
+vim foo 
+rm foo 
+clear
+bin/rails server
+bin/rails server
+ls vendor/
+bin/rails server
+clear
+vim app/views/articles/new.html.erb 
+vim app/views/articles/new.html.erb 
+vim app/views/articles/new.html.erb 
+vim app/controllers/articles_controller.rb 
+vim ~/.vimrc 
+bin/rake routes
+vim app/controllers/articles_controller.rb 
+clear
+bin/rails generate model Article title:string text:text
+cat app/models/article.rb 
+cat db/migrate/20160120094738_create_articles.rb 
+ls ../crispy-parakeet/db/migrate/
+clear
+bin/rake db:migrate
+vim app/controllers/articles_controller.rb 
+cat app/models/article.rb 
+ls
+cat db/migrate/20160120094738_create_articles.rb 
+cat db/schema.rb 
+clear
+vim app/views/articles/new.html.erb 
+vimtutor
+cd app/
+vim models/article.rb 
+vim controllers/articles_controller.rb 
+ls views/articles/
+vim views/articles/new.html.erb 
+vim controllers/articles_controller.rb 
+bin/rake routes
+cd ..
+bin/rake routes
+vim controllers/articles_controller.rb 
+vim app/controllers/articles_controller.rb 
+vim app/controllers/articles_controller.rb 
+vim app/models/article.rb 
+vim app/models/article.rb 
+clear
+vim app/controllers/articles_controller.rb 
+vim app/controllers/articles_controller.rb 
+vim app/views/articles/show.html.erb 
+vim app/controllers/articles_controller.rb 
+vim app/views/articles/edit.html.erb
+bin/rake routes
+clear
+vim app/controllers/articles_controller.rb 
+vim app/views/articles/edit.html.erb 
+bin/rake routes
+vim app/views/articles/index.html.erb 
+vim app/views/articles/_form.html.erb
+man screen
+vim app/controllers/articles_controller.rb 
+bin/rails generate model Comment commenter:string body:text article:references
+vim app/models/comment.rb 
+vim db/migrate/20160120124524_create_comments.rb 
+bin/rake db:migrate
+clear
+vim app/models/article.rb 
+vim config/routes.rb 
+man head
+head -n 10 config/routes.rb 
+bin/rake routes
+bin/rails generate controller Comments
+clear
+vim app/views/articles/show.html.erb 
+vim app/controllers/application_controller.rb 
+vim app/controllers/articles_controller.rb 
+clear
+cd ../crispy-parakeet/
+ls
+vim config/routes.rb 
+ls app/views/
+ls app/views/devise/
+ls app/views/grants/
+vim app/views/grants/grantex.html.erb 
+ls
+ls app/
+ls app/assets/
+ls app/assets/stylesheets/
+cd app/assets/
+ls
+ls fonts/
+ls images/
+ls javascripts/
+ls
+ls fonts/font-awesome/
+clear
+ls
+ls stylesheets/
+vim stylesheets/jednotka_green.scss 
+cd ..
+cd ..
+ls
+cd app/views/
+ls
+clear
+ls
+vim profiles/show.html.erb 
+gem list | grep devise
+cd ~/work/rubyScripts/
+ls
+git status
+git add minAvgTwoSlice.rb test 
+git status
+git commit -m 'new solution, albeit incorrect'
+git status
+git push origin HEAD
+clear
+cd
+git status
+git add .bash_profile .bash_history .bashrc .config/dconf/user .vimrc 
+git status
+vim .zshrc 
+ls .gem/
+ls .gem/specs/api.rubygems.org%443/
+ls .gem/specs/api.rubygems.org%443/quick/
+ls .gem/specs/api.rubygems.org%443/quick/Marshal.4.8/
+vim .gem/specs/api.rubygems.org%443/quick/Marshal.4.8/actionmailer-4.2.5.gemspec 
+clear
+git status
+git commit -m 'vimrc tab settings; bash minor after rvm install'
+git push origin
+vim .mkshrc 
+ls .rvm/bin/
+clear
+shutdown
