@@ -16,3 +16,7 @@ set tabstop=4
 set shiftwidth=4
 " others
 set softtabstop=4
+
+" use system ruby, against which vim was compiled, else omni-completion
+" doesn't work
+" Rvm use system

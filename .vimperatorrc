@@ -39,3 +39,4 @@ EOF
 source! /home/jayant/.vimperatorrc.local
 
 " vim: set ft=vimperator:
+set toolbars=noaddons,nobookmarks,nomenu,nonavigation,tabs
