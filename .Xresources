@@ -86,6 +86,9 @@ xterm*internalBorder:        0
 xterm*loginShell:         true
 xterm*scrollBar:         false
 xterm*cursorBlink:       false
+
+!Use clipboard
+xterm*selectToClipboard: true
 !xterm*geometry:         80x26
 xterm*saveLines:         65535
 xterm*dynamicColors:        on

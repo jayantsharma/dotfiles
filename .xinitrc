@@ -5,6 +5,6 @@ firefox &
 xterm &
 # cairo composite manager
 # cairo-compmgr &
-# conky &
+conky &
 # windows manager
 exec awesome

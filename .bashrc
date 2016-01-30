@@ -16,6 +16,9 @@ alias ls='ls --color'
 
 alias rm='rm -i'
 
+# ctags
+# alias ct='ctags -R .'
+
 alias freelanceTimeTracker='~/work/freelancerApp/opt/freelancer-desktop-app/1.3.1/freelancer-desktop-app --skip-update'
 
 alias netJerzy='sudo netctl restart jerzy'

@@ -20,3 +20,28 @@ set softtabstop=4
 " use system ruby, against which vim was compiled, else omni-completion
 " doesn't work
 " Rvm use system
+
+" rectify paste indenting
+nnoremap <F2> :set invpaste paste?<CR>
+set pastetoggle=<F2>
+set showmode
+
+" set mapleader
+let mapleader = ";"
+" ctags shortcut
+nnoremap <Leader>c :! ctags -R .<CR>
+" tagbar shortcut
+nnoremap <Leader>t <F9> :TagbarToggle<CR>
+" CtrlP shortcut
+nnoremap <Leader>. <F9> :CtrlP<CR>
+
+" wildmenu tab completion
+set wildmenu
+
+" quick buffer nav
+" map gn :bn<cr>
+" map gp :bp<cr>
+" map gd :bd<cr> 
+
+" modify path for rails projects
+set path+=app/,models/,config/

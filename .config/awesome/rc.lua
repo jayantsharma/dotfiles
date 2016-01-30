@@ -271,7 +271,9 @@ globalkeys = awful.util.table.join(
                   awful.util.getdir("cache") .. "/history_eval")
               end),
     -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end)
+    awful.key({ modkey }, "p", function() menubar.show() end),
+	-- Conky
+	awful.key({}, "Pause", function() toggle_conky() end)
 )
 
 clientkeys = awful.util.table.join(
@@ -348,6 +350,46 @@ clientbuttons = awful.util.table.join(
 root.keys(globalkeys)
 -- }}}
 
+-- {{{ Conky
+do
+    local conky = nil
+
+    function get_conky(default)
+        if conky and conky.valid then
+			return conky
+		end
+
+        conky = awful.client.iterate(function(c) return c.class == "Conky" end)()
+        return conky or default
+    end
+
+--     function raise_conky()
+--         get_conky({}).ontop = true
+-- 	end
+-- 
+-- 	function lower_conky()
+-- 		get_conky({}).ontop = false
+-- 	end
+-- 	
+-- 
+-- 		local t = gears.timer({ timeout = 0.01 })
+-- 		t:start()
+-- 		t:connect_signal("timeout", function()
+-- 		    t:stop()
+-- 		    lower_conky()
+-- 	    end)
+-- 
+-- 	function lower_conky_delayed()
+-- 		t:again()
+-- 	end
+
+	function toggle_conky()
+       local conky = get_conky({})
+	   conky.ontop = not conky.ontop
+	 end
+end
+-- }}}
+--
 -- {{{ Rules
 -- Rules to apply to new clients (through the "manage" signal).
 awful.rules.rules = {
@@ -368,6 +410,13 @@ awful.rules.rules = {
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
+	{ rule = { class = "Conky" },
+	  properties = {
+		        floating = true,
+				sticky = true,
+				ontop = false,
+				focusable = false
+				} }
 }
 -- }}}
 
@@ -445,4 +494,4 @@ client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_n
 -- }}}
 
 -- Conky status bar
-mystatusbar = awful.wibox({ position = "bottom", screen = 1, ontop = false, width = 1, height = 16 })
+-- mystatusbar = awful.wibox({ position = "bottom", screen = 1, ontop = false, width = 1, height = 16 })
