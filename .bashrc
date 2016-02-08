@@ -29,6 +29,10 @@ alias netHome='sudo netctl restart home'
 alias startHome='sudo netctl start home'
 alias stopHome='sudo netctl stop home'
 
+alias netMobile='sudo netctl restart mobile'
+alias startMobile='sudo netctl start mobile'
+alias stopMobile='sudo netctl stop mobile'
+
 alias netPhoton='sudo netctl restart photon'
 alias startPhoton='sudo netctl start photon'
 alias stopPhoton='sudo netctl stop photon'
@@ -45,6 +49,8 @@ alias sshBharat='ssh rishu07@www.himalpinist.com'
 alias packageInstall='sudo pacman -S'
 
 alias svim='sudo vim'
+
+alias grep='grep --color=auto -n'
 
 # check system logs for high priority errors
 alias checkLogs='journalctl -p 0..3 -xn'

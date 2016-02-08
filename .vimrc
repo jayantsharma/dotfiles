@@ -45,3 +45,6 @@ set wildmenu
 
 " modify path for rails projects
 set path+=app/,models/,config/
+
+" code folding by syntax
+set foldmethod=indent
