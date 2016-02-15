@@ -13,9 +13,9 @@ filetype plugin on    " Enable filetype-specific plugins
 " size of a hard tabstop
 set tabstop=4
 " size of an indent
-set shiftwidth=4
+set shiftwidth=2
 " others
-set softtabstop=4
+set softtabstop=2
 
 " use system ruby, against which vim was compiled, else omni-completion
 " doesn't work
