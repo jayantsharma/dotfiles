@@ -3,6 +3,9 @@ syntax enable
 colors zenburn
 set clipboard=unnamed
 
+" pathogen
+execute pathogen#infect()
+
 " needed for enabling ruby extensions
 set nocompatible      " We're running Vim, not Vi!
 syntax on             " Enable syntax highlighting
