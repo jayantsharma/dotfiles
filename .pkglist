@@ -3,6 +3,7 @@ autoconf
 automake
 awesome
 bash
+bind-tools
 binutils
 bison
 bzip2
@@ -63,7 +64,9 @@ nano
 netctl
 nodejs
 npm
+ntfs-3g
 ntp
+octave
 openssh
 os-prober
 pacman
@@ -82,6 +85,7 @@ psmisc
 pstoedit
 putty
 python2-pip
+r
 redshift
 reiserfsprogs
 rsync
@@ -115,6 +119,7 @@ xf86-input-synaptics
 xf86-video-intel
 xf86-video-vesa
 xfsprogs
+xmlsec
 xorg-server
 xorg-server-utils
 xorg-xdpyinfo
