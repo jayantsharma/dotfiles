@@ -1,11 +1,13 @@
-shopt -s expand_aliases
 # So that script will expand aliases.
+shopt -s expand_aliases
+# Enable recursive globbing
+shopt -s globstar
 
 # change to my work directory by default; at least till I change jobs
-cd ~/work/crispy-parakeet
+# cd ~/work/masters
 
 # make gem work
-PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+# PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
 # add heroku to path
 PATH="/usr/local/heroku/bin:$PATH"
 
@@ -16,13 +18,19 @@ export TERM=xterm-256color
 
 # aliases
 alias ls='ls --color'
-
+alias c='clear'
 alias rm='rm -i'
 
 # ctags
 # alias ct='ctags -R .'
 
 alias freelanceTimeTracker='~/work/freelancerApp/opt/freelancer-desktop-app/1.3.1/freelancer-desktop-app --skip-update'
+
+alias testdb='psql --host=test.c9zno5jkt58g.us-west-2.rds.amazonaws.com --port=5432 --username=ebtest -w testdb'
+alias proddb='psql --host=prod.c9zno5jkt58g.us-west-2.rds.amazonaws.com --port=5432 --username=jayant -w gyandhan_main'
+alias proddbsuperuser='psql --host=prod.c9zno5jkt58g.us-west-2.rds.amazonaws.com --port=5432 --username=gyandhan -w gyandhan_main'
+
+alias restart_wifi='sudo systemctl restart netctl-auto@wlo1'
 
 alias netJerzy='sudo netctl restart jerzy'
 alias startJerzy='sudo netctl start jerzy'
@@ -43,6 +51,28 @@ alias stopPhoton='sudo netctl stop photon'
 alias netAashima='sudo netctl restart aashima'
 alias startAashima='sudo netctl start aashima'
 alias stopAashima='sudo netctl stop aashima'
+
+alias study='cd ~/work/masters'
+alias code='cd ~/work/masters/coding/leetCode'
+alias ml='cd ~/work/masters/course_work/machine_learning'
+alias nosql='cd ~/work/masters/course_work/big_data_engg/nosql_project/'
+alias resume='cd ~/work/employment/resume'
+alias research='cd ~/work/masters/research/time_series'
+
+alias spark_cd='cd /home/jayant/work/masters/research/distributed_systems/spark-1.6.1-bin-hadoop1'
+
+export HADOOP_CONF_DIR='/home/jayant/work/masters/research/distributed_systems/hadoop-1.2.1/conf'
+alias hadoop_cd='cd /home/jayant/work/masters/research/distributed_systems/hadoop-1.2.1'
+alias hadoop='/home/jayant/work/masters/research/distributed_systems/hadoop-1.2.1/bin/hadoop'
+alias hadoop_start='/home/jayant/work/masters/research/distributed_systems/hadoop-1.2.1/bin/start-all.sh'
+alias hadoop_stop='/home/jayant/work/masters/research/distributed_systems/hadoop-1.2.1/bin/stop-all.sh'
+
+alias webapp='cd ~/work/gyandhan/crispy-parakeet'
+alias ds='cd ~/work/gyandhan/datadev'
+alias blog='cd ~/work/gyandhan/blog'
+alias gsd='cd ~/work/gyandhan/glassdoor_api'
+alias gsd0='cd ~/work/gyandhan/glassdoor_api/glassdoor_0'
+alias gsd1='cd ~/work/gyandhan/glassdoor_api/glassdoor_1'
 
 alias restart='sudo reboot'
 alias shutdown='sudo shutdown now'
@@ -65,6 +95,7 @@ alias checkLogs='journalctl -p 0..3 -xn'
 alias rails='bin/rails'
 alias rake='bin/rake'
 alias spring='bin/spring'
+alias run_loaneligs_test='ruby -I test test/integration/loaneligs_flow_test.rb -n'
 
 # town talkies
 alias geetblog='ssh -i ~/.ssh/town_talkies.ssh ec2-user@52.77.38.171'
@@ -75,6 +106,18 @@ alias getWifiWorking='sudo rmmod brcmfmac; sleep 5; sudo modprobe brcmfmac;'
 # headache typing
 alias netctl-auto='sudo netctl-auto'
 alias systemctl='sudo systemctl'
+
+# elastic beanstalk
+alias sshprod='eb ssh production --force'
+alias sshtest='eb ssh test --force'
+
+# compress project
+alias compressProject='~/work/git-archive-all/git_archive_all.py deployments/current.zip'
+
+# restart pdnsd
+alias redns='systemctl restart pdnsd'
+# ping
+alias ping_test='ping www.google.com -c 3'
 
 # vi as default editor
 set -o vi
@@ -92,3 +135,9 @@ ssh-add -l >/dev/null || alias ssh='ssh-add -l >/dev/null || ssh-add && unalias 
 
 # git completion
 source ~/git-completion.bash
+
+# Hadoop won't run without this
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
+
+# added by Miniconda3 installer
+export PATH="/home/jayant/miniconda3/bin:$PATH"

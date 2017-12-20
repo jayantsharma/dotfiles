@@ -13,8 +13,9 @@ filetype on           " Enable filetype detection
 filetype indent on    " Enable filetype-specific indenting
 filetype plugin on    " Enable filetype-specific plugins
 
+set expandtab
 " size of a hard tabstop
-set tabstop=4
+" set tabstop=8
 " size of an indent
 set shiftwidth=2
 " others
@@ -51,3 +52,22 @@ set path+=app/,models/,config/
 
 " code folding by syntax
 set foldmethod=indent
+
+" find smartly
+set smartcase
+
+" IMPORTANT: grep will sometimes skip displaying the file name if you
+" search in a singe file. This will confuse Latex-Suite. Set your grep
+" program to always generate a file-name.
+set grepprg=grep\ -nH\ $*
+
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to
+" 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
+" The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+:set autowrite
+:set makeprg=python\ %
+
+" tags file location
+set tags+=.tags
