@@ -71,3 +71,14 @@ let g:tex_flavor='latex'
 
 " tags file location
 set tags+=.tags
+
+" let c='a'
+"    while c <= 'z'
+"      exec "set <A-".c.">=\e".c
+"      exec "imap \e".c." <A-".c.">"
+"      let c = nr2char(1+char2nr(c))
+"    endw
+"    set timeout ttimeoutlen=50
+   
+" Escape insert mode with just jj
+imap jj <Esc>

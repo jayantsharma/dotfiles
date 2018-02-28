@@ -11,6 +11,9 @@ shopt -s globstar
 # add heroku to path
 PATH="/usr/local/heroku/bin:$PATH"
 
+# add skype
+PATH="~/.aur/usr/bin:$PATH"
+
 # What does this do ?
 export CLICOLOR=1
 # something to do with vim zenburn
@@ -20,6 +23,7 @@ export TERM=xterm-256color
 alias ls='ls --color'
 alias c='clear'
 alias rm='rm -i'
+alias mv='mv -i'
 
 # ctags
 # alias ct='ctags -R .'
@@ -52,12 +56,15 @@ alias netAashima='sudo netctl restart aashima'
 alias startAashima='sudo netctl start aashima'
 alias stopAashima='sudo netctl stop aashima'
 
-alias study='cd ~/work/masters'
+alias study='cd ~/work/masters/course_work'
 alias code='cd ~/work/masters/coding/leetCode'
 alias ml='cd ~/work/masters/course_work/machine_learning'
 alias nosql='cd ~/work/masters/course_work/big_data_engg/nosql_project/'
 alias resume='cd ~/work/employment/resume'
-alias research='cd ~/work/masters/research/time_series'
+alias research='cd ~/work/masters/research'
+alias vision='cd ~/work/masters/research/vision'
+alias flights='cd ~/work/masters/research/flights'
+alias transdev='cd ~/work/masters/research/transdev'
 
 alias spark_cd='cd /home/jayant/work/masters/research/distributed_systems/spark-1.6.1-bin-hadoop1'
 
@@ -119,6 +126,20 @@ alias redns='systemctl restart pdnsd'
 # ping
 alias ping_test='ping www.google.com -c 3'
 
+# HDMI
+alias hdmi='xrandr --output HDMI1 --mode 1920x1080'
+# HDMI Off
+alias hdmi_off='xrandr --output HDMI1 --off'
+
+# MATLAB
+alias matlab_cmd='cd ~/software/matlab_2016; bin/matlab -nojvm -nodisplay -nosplash'
+alias cd_matlab='cd ~/software/matlab_2016;'
+
+# nohup background jobs
+function blowjob(){
+  nohup $1 > /dev/null &
+}
+
 # vi as default editor
 set -o vi
 
@@ -141,3 +162,5 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 
 # added by Miniconda3 installer
 export PATH="/home/jayant/miniconda3/bin:$PATH"
+
+export MATLABPATH='/home/jayant/work/masters/course_work/robotics_vision'
