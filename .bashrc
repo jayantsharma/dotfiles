@@ -117,6 +117,9 @@ alias systemctl='sudo systemctl'
 # elastic beanstalk
 alias sshprod='eb ssh production --force'
 alias sshtest='eb ssh test --force'
+# hyunsoo
+alias sshhyunsoo='ssh hyunsoo'
+alias gpu='ssh gpu'
 
 # compress project
 alias compressProject='~/work/git-archive-all/git_archive_all.py deployments/current.zip'
@@ -132,7 +135,7 @@ alias hdmi='xrandr --output HDMI1 --mode 1920x1080'
 alias hdmi_off='xrandr --output HDMI1 --off'
 
 # MATLAB
-alias matlab_cmd='cd ~/software/matlab_2016; bin/matlab -nojvm -nodisplay -nosplash'
+alias matlab_cmd='cd ~/software/matlab_2016; bin/matlab -nojvm -nodisplay -nosplash; cd -'
 alias cd_matlab='cd ~/software/matlab_2016;'
 
 # nohup background jobs
@@ -164,3 +167,15 @@ export JAVA_HOME=/usr/lib/jvm/java-8-openjdk
 export PATH="/home/jayant/miniconda3/bin:$PATH"
 
 export MATLABPATH='/home/jayant/work/masters/course_work/robotics_vision'
+
+# Bash History customizations
+# history size
+export HISTFILESIZE=
+export HISTSIZE=
+export HISTTIMEFORMAT="[%F %T] "
+# Change the file location because certain bash sessions truncate .bash_history file upon close.
+# http://superuser.com/questions/575479/bash-history-truncated-to-500-lines-on-each-login
+export HISTFILE=~/.bash_eternal_history
+# Force prompt to write history after every command.
+# http://superuser.com/questions/20900/bash-history-loss
+PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
