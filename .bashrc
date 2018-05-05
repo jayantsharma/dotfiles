@@ -120,6 +120,9 @@ alias sshtest='eb ssh test --force'
 # hyunsoo
 alias sshhyunsoo='ssh hyunsoo'
 alias gpu='ssh gpu'
+alias msi='ssh msi'
+# USE THIS!!!!
+alias scp_rsync='rsync -rh -u --info=progress2 -e ssh'
 
 # compress project
 alias compressProject='~/work/git-archive-all/git_archive_all.py deployments/current.zip'
@@ -179,3 +182,5 @@ export HISTFILE=~/.bash_eternal_history
 # Force prompt to write history after every command.
 # http://superuser.com/questions/20900/bash-history-loss
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
