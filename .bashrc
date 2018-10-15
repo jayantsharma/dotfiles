@@ -12,7 +12,7 @@ shopt -s globstar
 PATH="/usr/local/heroku/bin:$PATH"
 
 # add skype
-PATH="~/.aur/usr/bin:$PATH"
+# PATH="~/.aur/usr/bin:$PATH"
 
 # What does this do ?
 export CLICOLOR=1
@@ -62,7 +62,7 @@ alias ml='cd ~/work/masters/course_work/machine_learning'
 alias nosql='cd ~/work/masters/course_work/big_data_engg/nosql_project/'
 alias resume='cd ~/work/employment/resume'
 alias research='cd ~/work/masters/research'
-alias vision='cd ~/work/masters/research/vision'
+alias vision='cd ~/work/masters/research/vision/semantic_localization'
 alias flights='cd ~/work/masters/research/flights'
 alias transdev='cd ~/work/masters/research/transdev'
 
