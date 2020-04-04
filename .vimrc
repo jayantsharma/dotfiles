@@ -82,3 +82,7 @@ set tags+=.tags
  
 " Escape insert mode with just jj
 imap jj <Esc>
+
+" Enable Autosave by default
+let g:auto_save = 1
+let g:auto_save_silent = 1
