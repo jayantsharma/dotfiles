@@ -121,8 +121,13 @@ alias sshtest='eb ssh test --force'
 alias sshhyunsoo='ssh hyunsoo'
 alias gpu='ssh gpu'
 alias msi='ssh msi'
+alias cmrr='ssh cmrr'
 # USE THIS!!!!
 alias scp_rsync='rsync -rh -u --info=progress2 -e ssh'
+# VPN
+alias vpn='/opt/cisco/anyconnect/bin/vpn connect tc-vpn-1.vpn.umn.edu'
+alias vpn_disconnect='/opt/cisco/anyconnect/bin/vpn disconnect'
+# alias cmrr_vpn='sudo openconnect tc-vpn-1.vpn.umn.edu -g AnyConnect-CMRR -u sharm546'
 
 # compress project
 alias compressProject='~/work/git-archive-all/git_archive_all.py deployments/current.zip'
@@ -184,3 +189,9 @@ export HISTFILE=~/.bash_eternal_history
 PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 
 export LD_LIBRARY_PATH=/usr/local/lib:$LD_LIBRARY_PATH
+
+# Add MANO code to PYTHONPATH
+export PYTHONPATH=$PYTHONPATH:/home/jayant/mano_v1_2
+
+# Ubuntu suspend doesn't require passwd to wake up. So combine with slock
+alias sslock='systemctl suspend; slock'
