@@ -120,3 +120,12 @@ alias scp_rsync='rsync -rh -u --info=progress2 -e ssh'
 source /home/jayant/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
+
+# Replace ssh-agent with gpg-agent
+export GPG_TTY="$(tty)"
+# OLD systems
+# export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
+# gpg-connect-agent updatestartuptty /bye > /dev/null
+# NEW systems
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+gpgconf --launch gpg-agent
