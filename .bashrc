@@ -13,6 +13,8 @@ PATH="/usr/local/heroku/bin:$PATH"
 
 # add skype
 # PATH="~/.aur/usr/bin:$PATH"
+# add asp
+PATH="~/.aur/asp:$PATH"
 
 # What does this do ?
 export CLICOLOR=1
